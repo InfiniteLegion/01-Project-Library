@@ -5,9 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Project</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 </head>
 <body>
-    
+    <div class="content-wrapper">
+        <div class="header">
+            <span>THE ODIN'S LIBRARY</span>
+        </div>
+
+        <div class="main">
+            <div class="button-container">
+                <button command="show-modal" commandFor="bookDialog">Add book</button>
+
+                <dialog id="bookDialog">
+                    <h2>Add book</h2>
+                    
+                    <div class="input-block">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" placeholder="Book title">
+                    </div>
+                    
+                    <div class="input-block">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" placeholder="Book author">
+                    </div>
+                    
+                    <div class="input-block">
+                        <label for="pages">Pages</label>
+                        <input type="number" min="1" id="pages" value="1">
+                    </div>
+                    
+                    <div class="input-block">
+                        <input type="checkbox" id="read">
+                        <label for="read">Read</label>
+                    </div>
+                    
+                    <div class="modal-btn-block">
+                        <button>Add</button>
+                        <button command="close" commandFor="bookDialog">Close</button>
+                    </div>
+                </dialog>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <th>id</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Read</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6a86da34-dc44-4ea0-9837-bf9e588a10f5</td>
+                            <td>Treasure Island</td>
+                            <td>Robert Louis Stevenson</td>
+                            <td>292</td>
+                            <td>Yes</td>
+                            <td>
+                                <span class="mdi mdi-delete"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/script.js" type="module"></script>
 </body>
