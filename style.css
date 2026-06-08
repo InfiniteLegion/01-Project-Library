@@ -129,19 +129,32 @@ button {
 }
 
 .mdi {
-    color: red;
-    font-size: 1.5em;
     cursor: pointer;
 }
 
-.mdi:active {
+.mdi-delete {
+    color: red;
+    font-size: 1.5em;
+}
+
+.mdi-delete:active {
     color: rgb(235, 0, 0);
+}
+
+.mdi-book-sync-outline {
+    color: rgb(228, 169, 6);
+    font-size: 1.5em;
+}
+
+.mdi-book-sync-outline:active {
+    color: rgb(201, 148, 4);
 }
 
 table {
     font-size: 20px;
     border-spacing: 0;
     border-collapse: collapse;
+    min-width: 60%;
 }
 
 th, td {

@@ -42,7 +42,7 @@
                     </div>
                     
                     <div class="modal-btn-block">
-                        <button>Add</button>
+                        <button id="btnAdd">Add</button>
                         <button command="close" commandFor="bookDialog">Close</button>
                     </div>
                 </dialog>
@@ -56,20 +56,10 @@
                         <th>Author</th>
                         <th>Pages</th>
                         <th>Read</th>
+                        <th>Change status</th>
                         <th>Delete</th>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>6a86da34-dc44-4ea0-9837-bf9e588a10f5</td>
-                            <td>Treasure Island</td>
-                            <td>Robert Louis Stevenson</td>
-                            <td>292</td>
-                            <td>Yes</td>
-                            <td>
-                                <span class="mdi mdi-delete"></span>
-                            </td>
-                        </tr>
-                    </tbody>
+                    <tbody id="booksList"></tbody>
                 </table>
             </div>
         </div>
